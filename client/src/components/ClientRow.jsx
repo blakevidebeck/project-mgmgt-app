@@ -17,11 +17,13 @@ export const ClientRow = ({ client }) => {
 		},
 	});
 
+	const { name, email, phone } = client;
+
 	return (
 		<tr>
-			<td>{client.name}</td>
-			<td>{client.email}</td>
-			<td>{client.phone}</td>
+			<td>{name}</td>
+			<td>{email}</td>
+			<td>{phone}</td>
 			<td>
 				<button className='btn btn-danger btn-sm' onClick={deleteClient}>
 					<FaTrash />
